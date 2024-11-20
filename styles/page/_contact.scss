@@ -1,0 +1,43 @@
+body{
+    .image{
+        img{
+            width: 100%;
+        }
+    }
+    .about-project, .instructions, .fonds, .contact-info, .group{
+        padding: 0 133px;
+
+        h1{
+            font-size: 36px;
+            font-weight: 600;
+            color: #022859;
+            margin-bottom: 40px;
+        }
+        p{
+            margin-bottom: 40px;
+            text-align: justify;
+        }
+        .general-contact{
+            display: flex;
+            justify-content: space-between;
+
+            .phone, .email, .location, .facebook{
+                display: flex;
+                gap: 16px;
+                margin-bottom: 22px;
+                font-size: 18px;
+                font-weight: 500;
+                
+                a{
+                    color: #022859;
+                    text-decoration: none;
+                }
+            }
+
+            iframe{
+                width: 900px;
+                height: 290px;
+            }
+        }
+    }
+}

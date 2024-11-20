@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book details</title>
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+   <main-header></main-header>
+   <section>
+    <div class="book-details">
+        <div class="detail-img">
+            <img src="" id="image">
+            <div class="pdf">წაკითხვა(PDF)</div>
+        </div>
+        <div class="details">
+            <p id="title"></p>
+            <p class="year">ილია ჭავჭავაძე | წელი</p>
+
+            <div class="span">
+                <i class='bx bx-book-open' ></i>
+                <p>გვერდების რაოდენობა: </p>
+                <p id="page-numbers"></p>
+            </div>
+            <div class="span">
+                <i class='bx bx-globe' ></i>
+                <p>ენა: </p>
+                <p id="language"></p>
+            </div>
+            <div class="span">
+                <i class='bx bx-bookmark' ></i>
+                <p>გამომცემლობა: </p>
+                <p id="publish"></p>
+            </div>
+
+            <div class="links">
+                <a href="#" id="anotation-link" class="active">ანოტაცია</a>
+                <a href="#" id="sarchevi-link">სარჩევი</a>
+                <a href="#" id="features-link">მახასიათებლები</a>
+            </div>
+
+            <div class="anotation">
+                <p id="anotation"></p>
+                <h5>© ილიას სახელმწიფო უნივერსიტეტის</h5>
+                <h5>გ.წერეთლის აღმოსვლეთმცოდნეობის ინსტიტუტი</h5>
+                <h5>G.Tsereteli Institute of Oriental Studies of the Ilia State University</h5>
+            </div>
+            <div class="sarchevi" style="display: none;">
+                <p>თავი 1. შესავალი თანამედროვე აზროვნებაში</p>
+                <p>თავი 2. წინათქმა</p>
+                <p>თავი 3. მეორე ტრაქტატი სამოქალაქსო მმართველობაზე</p>
+            </div>
+            <div class="features" style="display: none;">
+                <p>ავტორი:</p>
+                <div class="line"></div>
+                <p>სათაური:</p>
+                <div class="line"></div>
+                <p>გამოცემის ადგილი:</p>
+                <div class="line"></div>
+                <p>გამომცემლობა:</p>
+                <div class="line"></div>
+                <p>გამოცემის წელი:</p>
+                <div class="line"></div>
+                <p>ენა:</p>
+                <div class="line"></div>
+                <p>ISBN:</p>
+                <div class="line"></div>
+                <p>ISSN:</p>
+                <div class="line"></div>
+                <p>ჟურნალის სახელწოდება:</p>
+                <div class="line"></div>
+                <p>კრებულის სახელწოდება:</p>
+                <div class="line"></div>
+                <p>ნომერი:</p>
+                <div class="line"></div>
+                <p>სერია:</p>
+                <div class="line"></div>
+                <p>ჟანრი:</p>
+                <div class="line"></div>
+                <p>გამოცემა:</p>
+                <div class="line"></div>
+                <p>პასუხისმგებელი პირი:</p>
+                <div class="line"></div>
+                <p>პასუხისმგებელი ორგანო:</p>
+                <div class="line"></div>
+                <p>ტომი:</p>
+                <div class="line"></div>
+                <p>ტირაჟი:</p>
+                <div class="line"></div>
+                <p>წინასიტყვაობა:</p>
+                <div class="line"></div>
+                <p>ფიზიკური აღწერილობა:</p>
+                <div class="line"></div>
+                <p>სარჩევი:</p>
+                <div class="line"></div>
+                <p>ბმული:</p>
+                <div class="line"></div>
+                <p>ანოტაცია:</p>
+                <div class="line"></div>
+                <p>დამატებითი ინფორმაცია:</p>
+            </div>
+        </div>
+    </div>
+   </section>
+
+   <section class="similar">
+    <h1>მსგავსი წიგნები</h1>
+    <div class="similar-books"></div>
+   </section>
+   <main-footer></main-footer>
+
+   <script src="./js/header&footer.js"></script>
+   <script src="./js/rendom-books.js"></script>
+   <script>
+    const selectedBook = JSON.parse(localStorage.getItem('selectedBook'));
+    if(selectedBook){
+        document.getElementById('image').src = `${selectedBook.image}`;
+        document.getElementById('title').textContent = `${selectedBook.title}`;
+        document.getElementById('page-numbers').textContent = `${selectedBook.pagenumbers}`;
+        document.getElementById('language').textContent = `${selectedBook.language}`;
+        document.getElementById('publish').textContent = `${selectedBook.publish}`;
+        document.getElementById('anotation').textContent = `${selectedBook.anotation}`;
+    }
+
+
+    document.getElementById('anotation-link').addEventListener('click', function(event) {
+        event.preventDefault();
+        showSection('anotation');
+    });
+
+    document.getElementById('sarchevi-link').addEventListener('click', function(event) {
+        event.preventDefault();
+        showSection('sarchevi');
+    });
+
+    document.getElementById('features-link').addEventListener('click', function(event) {
+        event.preventDefault();
+        showSection('features');
+    });
+
+    function showSection(section) {
+        document.querySelector('.anotation').style.display = 'none';
+        document.querySelector('.sarchevi').style.display = 'none';
+        document.querySelector('.features').style.display = 'none';
+
+        document.querySelectorAll('.links a').forEach(link => link.classList.remove('active'));
+
+        document.querySelector(`.${section}`).style.display = 'block';
+        document.getElementById(`${section}-link`).classList.add('active');
+    }
+   </script>
+</body>
+</html>

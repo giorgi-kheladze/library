@@ -1,0 +1,36 @@
+.group-members{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    
+    
+    .member{
+        img{
+            display: block;
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            margin-bottom: 24px;
+        }
+        .name{
+            display: flex;
+            gap: 16px;
+            font-size: 28px;
+        }
+        .position{
+            font-size: 18px;
+            margin-bottom: 24px;
+        }
+        .linkdin{
+            display: flex;
+            text-align: center;
+            gap: 12px;
+            font-size: 20px;
+
+            a{
+                text-decoration: none;
+                color: #022859;
+            }
+        }
+    }
+}

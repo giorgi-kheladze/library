@@ -1,0 +1,50 @@
+.books, .similar-books{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    padding: 24px 29px;
+    background-color: #F5F5F5;
+    border-radius: 15px;
+
+    img{
+        width: 220px;
+    }
+
+    .book{
+        width: 100%;
+        border-radius: 12px;
+        box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+    }
+}
+.similar-books{
+    display: flex;
+    background-color: white;
+    img{
+        width: 100%;
+    }
+}
+.pagination{
+    margin: 40px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    cursor: pointer;
+
+    button{
+        width: 34px;
+        height: 34px;
+        border-radius: 8px;
+        background-color: transparent;
+        border: none;
+        font-size: 18px;
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+    .active{
+        background-color: #002A48;
+        color: aliceblue;
+    }
+}

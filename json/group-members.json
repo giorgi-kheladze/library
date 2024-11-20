@@ -1,0 +1,26 @@
+[
+    {
+        "image": "./assets/contact-images/gundis-wevri1.png",
+        "firstname": "სახელი",
+        "lastname": "გვარი",
+        "position": "პოზიცია"
+    },
+    {
+        "image": "./assets/contact-images/gundis-wevri2.png",
+        "firstname": "სახელი",
+        "lastname": "გვარი",
+        "position": "პოზიცია"
+    },
+    {
+        "image": "./assets/contact-images/gundis-wevri3.png",
+        "firstname": "სახელი",
+        "lastname": "გვარი",
+        "position": "პოზიცია"
+    },
+    {
+        "image": "./assets/contact-images/gundis-wevri4.png",
+        "firstname": "სახელი",
+        "lastname": "გვარი",
+        "position": "პოზიცია"
+    }
+]

@@ -1,0 +1,62 @@
+.similar{
+    padding: 40px 132px;;
+}
+.book-details{
+    display: flex;
+    gap: 72px;
+    background-color: #F5F5F5;
+    padding: 75px 132px;
+
+    .detail-img{
+        img{
+            width: 500px;
+            height: 650px;
+            border-radius: 20px;
+        }
+        .pdf{
+            width: 500px;
+            height: 90px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #203A9C;
+            color: #F5F5F5;
+            border-radius: 20px;
+            margin-top: 30px;
+            cursor: pointer;
+        }
+    }
+    .details{
+        max-width: 900px;
+
+        #title{
+            font-size: 44px;
+            margin-bottom: 28px;
+        }
+        .year{
+            color: #555555;
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+        .span{
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        .features{
+            p{
+                margin-bottom: 18px;
+            }
+            .line{
+                height: 2px;
+                border: 1px dashed #D0D0D0;
+            }
+        }
+    }
+    .links{
+        margin-bottom: 24px;
+    }
+}

@@ -1,0 +1,393 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 138px;
+  padding: 44px 119.18px;
+  background-color: #081C6B;
+}
+header .navlist {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .navlist ul {
+  font-size: 28px;
+  font-weight: bald;
+  display: flex;
+  gap: 92px;
+  text-decoration: none;
+}
+header .navlist ul a {
+  color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+section img {
+  width: 100%;
+}
+section .search {
+  width: 300px;
+  height: 54px;
+  border: 1px solid black;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+section .search input {
+  border: none;
+  outline: none;
+}
+section .sort {
+  display: flex;
+  justify-content: space-between;
+  padding: 54px 90px 0;
+}
+section .sort .sorting {
+  display: flex;
+  align-items: center;
+}
+
+.section {
+  padding: 54px 90px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+footer .main-footer {
+  padding: 70px 132px;
+  background-color: #081C6B;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+footer .main-footer .main {
+  margin-bottom: 40px;
+  font-size: 18px;
+  font-weight: 600;
+}
+footer .main-footer .phone, footer .main-footer .email, footer .main-footer .location, footer .main-footer .library-link {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 22px;
+  font-size: 18px;
+  font-weight: 500;
+}
+footer .main-footer .phone a, footer .main-footer .email a, footer .main-footer .location a, footer .main-footer .library-link a {
+  color: white;
+  text-decoration: none;
+}
+footer .main-footer .group {
+  padding-top: 49px;
+}
+footer .copyrigth {
+  padding: 40px 132px;
+  color: white;
+  background-color: #064AA2;
+}
+
+aside {
+  width: 300px;
+  padding: 24px 29px;
+  background-color: #F5F5F5;
+  border-radius: 15px;
+}
+aside .clear {
+  width: 100%;
+  height: 58px;
+  background-color: transparent;
+  border: 1px solid #022859;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #022859;
+  margin-bottom: 32px;
+  cursor: pointer;
+}
+aside .published-year .calendar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+aside .published-year .calendar .start, aside .published-year .calendar .end {
+  width: 150px;
+  height: 54px;
+  border: 1px solid black;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+aside .published-year .calendar .start p, aside .published-year .calendar .end p {
+  color: #7D7D7D;
+}
+aside .media-type, aside .published-year, aside .genre-container, aside .language-container, aside .fond-container {
+  margin-bottom: 64px;
+}
+aside .media-type .media, aside .media-type .genre, aside .media-type .language, aside .media-type .fond, aside .media-type .year, aside .published-year .media, aside .published-year .genre, aside .published-year .language, aside .published-year .fond, aside .published-year .year, aside .genre-container .media, aside .genre-container .genre, aside .genre-container .language, aside .genre-container .fond, aside .genre-container .year, aside .language-container .media, aside .language-container .genre, aside .language-container .language, aside .language-container .fond, aside .language-container .year, aside .fond-container .media, aside .fond-container .genre, aside .fond-container .language, aside .fond-container .fond, aside .fond-container .year {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+aside .media-type .media i, aside .media-type .genre i, aside .media-type .language i, aside .media-type .fond i, aside .media-type .year i, aside .published-year .media i, aside .published-year .genre i, aside .published-year .language i, aside .published-year .fond i, aside .published-year .year i, aside .genre-container .media i, aside .genre-container .genre i, aside .genre-container .language i, aside .genre-container .fond i, aside .genre-container .year i, aside .language-container .media i, aside .language-container .genre i, aside .language-container .language i, aside .language-container .fond i, aside .language-container .year i, aside .fond-container .media i, aside .fond-container .genre i, aside .fond-container .language i, aside .fond-container .fond i, aside .fond-container .year i {
+  cursor: pointer;
+}
+aside .media-type .line, aside .published-year .line, aside .genre-container .line, aside .language-container .line, aside .fond-container .line {
+  width: 100%;
+  height: 2px;
+  background-color: #D5D5D5;
+  margin-bottom: 18px;
+}
+aside .media-type ul, aside .published-year ul, aside .genre-container ul, aside .language-container ul, aside .fond-container ul {
+  display: none;
+}
+aside .media-type ul li, aside .published-year ul li, aside .genre-container ul li, aside .language-container ul li, aside .fond-container ul li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  font-size: 18px;
+}
+aside .media-type ul li .button, aside .published-year ul li .button, aside .genre-container ul li .button, aside .language-container ul li .button, aside .fond-container ul li .button {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #515151;
+  border-radius: 3px;
+}
+aside .media-type ul li .active, aside .published-year ul li .active, aside .genre-container ul li .active, aside .language-container ul li .active, aside .fond-container ul li .active {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #515151;
+  border-radius: 3px;
+  background-color: #022859;
+}
+aside .media-type .show, aside .published-year .show, aside .genre-container .show, aside .language-container .show, aside .fond-container .show {
+  display: block;
+}
+
+.books, .similar-books {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  padding: 24px 29px;
+  background-color: #F5F5F5;
+  border-radius: 15px;
+}
+.books img, .similar-books img {
+  width: 220px;
+}
+.books .book, .similar-books .book {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.similar-books {
+  display: flex;
+  background-color: white;
+}
+.similar-books img {
+  width: 100%;
+}
+
+.pagination {
+  margin: 40px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  cursor: pointer;
+}
+.pagination button {
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.pagination .active {
+  background-color: #002A48;
+  color: aliceblue;
+}
+
+body .image img {
+  width: 100%;
+}
+body .about-project, body .instructions, body .fonds, body .contact-info, body .group {
+  padding: 0 133px;
+}
+body .about-project h1, body .instructions h1, body .fonds h1, body .contact-info h1, body .group h1 {
+  font-size: 36px;
+  font-weight: 600;
+  color: #022859;
+  margin-bottom: 40px;
+}
+body .about-project p, body .instructions p, body .fonds p, body .contact-info p, body .group p {
+  margin-bottom: 40px;
+  text-align: justify;
+}
+body .about-project .general-contact, body .instructions .general-contact, body .fonds .general-contact, body .contact-info .general-contact, body .group .general-contact {
+  display: flex;
+  justify-content: space-between;
+}
+body .about-project .general-contact .phone, body .about-project .general-contact .email, body .about-project .general-contact .location, body .about-project .general-contact .facebook, body .instructions .general-contact .phone, body .instructions .general-contact .email, body .instructions .general-contact .location, body .instructions .general-contact .facebook, body .fonds .general-contact .phone, body .fonds .general-contact .email, body .fonds .general-contact .location, body .fonds .general-contact .facebook, body .contact-info .general-contact .phone, body .contact-info .general-contact .email, body .contact-info .general-contact .location, body .contact-info .general-contact .facebook, body .group .general-contact .phone, body .group .general-contact .email, body .group .general-contact .location, body .group .general-contact .facebook {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 22px;
+  font-size: 18px;
+  font-weight: 500;
+}
+body .about-project .general-contact .phone a, body .about-project .general-contact .email a, body .about-project .general-contact .location a, body .about-project .general-contact .facebook a, body .instructions .general-contact .phone a, body .instructions .general-contact .email a, body .instructions .general-contact .location a, body .instructions .general-contact .facebook a, body .fonds .general-contact .phone a, body .fonds .general-contact .email a, body .fonds .general-contact .location a, body .fonds .general-contact .facebook a, body .contact-info .general-contact .phone a, body .contact-info .general-contact .email a, body .contact-info .general-contact .location a, body .contact-info .general-contact .facebook a, body .group .general-contact .phone a, body .group .general-contact .email a, body .group .general-contact .location a, body .group .general-contact .facebook a {
+  color: #022859;
+  text-decoration: none;
+}
+body .about-project .general-contact iframe, body .instructions .general-contact iframe, body .fonds .general-contact iframe, body .contact-info .general-contact iframe, body .group .general-contact iframe {
+  width: 900px;
+  height: 290px;
+}
+
+.group-members {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.group-members .member img {
+  display: block;
+  width: 250px;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 24px;
+}
+.group-members .member .name {
+  display: flex;
+  gap: 16px;
+  font-size: 28px;
+}
+.group-members .member .position {
+  font-size: 18px;
+  margin-bottom: 24px;
+}
+.group-members .member .linkdin {
+  display: flex;
+  text-align: center;
+  gap: 12px;
+  font-size: 20px;
+}
+.group-members .member .linkdin a {
+  text-decoration: none;
+  color: #022859;
+}
+
+.similar {
+  padding: 40px 132px;
+}
+
+.book-details {
+  display: flex;
+  gap: 72px;
+  background-color: #F5F5F5;
+  padding: 75px 132px;
+}
+.book-details .detail-img img {
+  width: 500px;
+  height: 650px;
+  border-radius: 20px;
+}
+.book-details .detail-img .pdf {
+  width: 500px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #203A9C;
+  color: #F5F5F5;
+  border-radius: 20px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+.book-details .details {
+  max-width: 900px;
+}
+.book-details .details #title {
+  font-size: 44px;
+  margin-bottom: 28px;
+}
+.book-details .details .year {
+  color: #555555;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+.book-details .details .span {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.book-details .details .features p {
+  margin-bottom: 18px;
+}
+.book-details .details .features .line {
+  height: 2px;
+  border: 1px dashed #D0D0D0;
+}
+.book-details .links {
+  margin-bottom: 24px;
+}
+
+.container {
+  background-color: #022859;
+  color: #F5F5F5;
+  width: 100%;
+  height: 100vh;
+}
+.container .error-container h1 {
+  font-size: 256px;
+  font-weight: bolder;
+}
+.container .error-container p {
+  font-size: 64px;
+  font-weight: bold;
+}
+.container .error-container a {
+  width: 25%;
+  display: block;
+  padding: 30px 36px;
+  text-decoration: none;
+  color: #F5F5F5;
+  border: 2px solid #F5F5F5;
+  border-radius: 20px;
+  margin-top: 50px;
+}
+.container .header {
+  padding: 32px 132px;
+  display: flex;
+  justify-content: space-between;
+}
+.container .header .nav {
+  display: flex;
+  gap: 40px;
+}
+.container .header .nav a {
+  font-size: 40px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #F5F5F5;
+}/*# sourceMappingURL=global.css.map */

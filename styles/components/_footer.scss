@@ -1,0 +1,36 @@
+footer{
+
+    .main-footer{
+        padding: 70px 132px;
+        background-color: #081C6B;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+
+        .main{
+            margin-bottom: 40px;
+            font-size: 18px;
+            font-weight: 600;
+        }
+        .phone, .email, .location, .library-link{
+            display: flex;
+            gap: 16px;
+            margin-bottom: 22px;
+            font-size: 18px;
+            font-weight: 500;
+
+            a{
+                color: white;
+                text-decoration: none;
+            }
+        }
+        .group{
+            padding-top: 49px;
+        }
+    }
+    .copyrigth{
+        padding: 40px 132px;
+        color: white;
+        background-color: #064AA2;
+    }
+}

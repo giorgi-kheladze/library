@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="./styles/global.css">
+</head>
+<body>
+    <main-header></main-header>
+    <section>
+        <img src="./assets/library-image.png" >
+        <div class="sort">
+            <div class="search">
+                <i class='bx bx-search' ></i>
+                <input type="search">
+            </div>
+            <div class="sorting">
+                <p>სორტირება</p>
+                <i class="bx bx-chevron-right"></i>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <aside>
+            <button class="clear">ფილტრაციის გასუფთავება</button>
+
+            <div class="media-type">
+                <div class="media">
+                    <p>მედიის ტიპი</p>
+                    <i class='bx bx-chevron-right' id="arrow" data-arrow="media" onclick="showList('media')"></i>
+                </div>
+                <div class="line"></div>
+                <ul class="list" id="list" data-list="media">
+                    <li>წიგნები <span><div class="button"></div></span></li>
+                    <li>პერიოდიკა <span><div class="button"></div></span></li>
+                    <li>წერილები <span><div class="button"></div></span></li>
+                    <li>ხელნაწერები <span><div class="button"></div></span></li>
+                    <li>აუდიო <span><div class="button"></div></span></li>
+                    <li>ფოტო <span><div class="button"></div></span></li>
+                </ul>
+            </div>
+            <div class="published-year">
+                <p class="year">გამოცემის წელი</p>
+                <div class="line"></div>
+                <div class="calendar">
+                    <div class="start">
+                        <i class='bx bxs-calendar' ></i>
+                        <p> -დან</p>
+                    </div>
+                    <i class='bx bx-chevron-right' ></i>
+                    <div class="end">
+                        <i class='bx bxs-calendar' ></i>
+                        <p> -მდე</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="genre-container">
+                <div class="genre">
+                    <p>ჟანრი</p>
+                    <i class='bx bx-chevron-right' id="arrow" data-arrow="genre" onclick="showList('genre')"></i>
+                </div>
+                <div class="line"></div>
+                <ul class="list" id="list" data-list="genre">
+                    <li>პოეზია <span><div class="button"></div></span></li>
+                    <li>პროზა <span><div class="button"></div></span></li>
+                    <li>წერილები <span><div class="button"></div></span></li>
+                    <li>სხვა <span><div class="button"></div></span></li>
+                </ul>
+            </div>
+            <div class="language-container">
+                <div class="language">
+                    <p>ენა</p>
+                    <i class='bx bx-chevron-right' id="arrow" data-arrow="language" onclick="showList('language')"></i>
+                </div>
+                <div class="line"></div>
+                <ul class="list" id="list" data-list="language">
+                    <li>ქართული <span><div class="button"></div></span></li>
+                    <li>ინგლისური <span><div class="button"></div></span></li>
+                    <li>ფრანგული <span><div class="button"></div></span></li>
+                </ul>
+            </div>
+            <div class="fond-container">
+                <div class="fond">
+                    <p>ფონდი</p>
+                    <i class='bx bx-chevron-right' id="arrow" data-arrow="fond" onclick="showList('fond')"></i>
+                </div>
+                <div class="line"></div>
+                <ul class="list" id="list" data-list="fond">
+                    <li>საჯარო <span><div class="button"></div></span></li>
+                    <li>ილიას სახელმწიფო უნივ.. <span><div class="button"></div></span></li>
+                    <li>ხელნაწერები <span><div class="button"></div></span></li>
+                    <li>მუზეუმი <span><div class="button"></div></span></li>
+                    <li>სხვა <span><div class="button"></div></span></li>
+                </ul>
+            </div>
+        </aside>
+
+        <div class="books-container">
+            <div class="books"></div>
+
+            <div class="pagination">
+                <a href="#"><i class='bx bx-chevron-left'></i></a>
+                <button id="page1" class="active">1</button>
+                <button id="page2">2</button>
+                <a href="#""><i class='bx bx-chevron-right' id="page2"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <main-footer></main-footer>
+
+    <script src="./js/header&footer.js"></script>
+    <script src="./js/list.js"></script>
+    <script src="./js/books.js"></script>
+    <!-- <script src="./js/404.js"></script> -->
+</body>
+</html>
